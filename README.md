@@ -134,4 +134,4 @@ Warehouse_Lega-Paket
 - Minimum Android yang didukung adalah **Android 12 (API Level 31)**.
 - Project dikembangkan menggunakan **Android Studio** dengan bahasa pemrograman **Kotlin**.
 - Barcode Scanner memanfaatkan kamera smartphone untuk melakukan pemindaian barcode secara langsung.
-- Seluruh data aplikasi disimpan secara lokal menggunakan **SharedPreferences** dan **Google GSON**.# 
+- Seluruh data aplikasi disimpan secara lokal menggunakan **SharedPreferences** dan **Google GSON**.
