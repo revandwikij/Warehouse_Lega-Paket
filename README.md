@@ -29,7 +29,7 @@ Video demonstrasi aplikasi beserta penjelasan fitur dan source code dapat diakse
 **Link YouTube**
 
 ```
-https://youtu.be/ISI_LINK_VIDEO_ANDA
+https://youtu.be/sQxy0GGo3p4
 ```
 
 ---
