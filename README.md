@@ -1,63 +1,309 @@
-# 📦 Warehouse LegaPaket - Android Logistics Management System
+# 📦 Warehouse LegaPaket - Android Warehouse Management System
 
 ## 01. Nama & Deskripsi Project
-**Warehouse LegaPaket** adalah aplikasi manajemen operasional logistik gudang (*Warehouse Management System*) berbasis Android yang dikembangkan oleh **Kelompok 11** menggunakan bahasa pemrograman **Kotlin**. 
 
-Aplikasi ini dirancang untuk mendigitalkan dan mengotomatisasi siklus rantai pasok kargo secara *end-to-end*. **Fitur utama unggulan dari aplikasi ini adalah sistem integrasi Barcode Scanner menggunakan Kamera HP secara real-time**. Petugas cukup mengarahkan kamera ke barcode paket untuk melakukan tracking, memicu pencarian data resi otomatis di database, dan memperbarui status kargo secara instan tanpa input manual. 
+**Warehouse LegaPaket** merupakan aplikasi **Warehouse Management System (WMS)** berbasis Android yang dikembangkan menggunakan bahasa pemrograman **Kotlin** sebagai proyek Ujian Akhir Semester (UAS) oleh **Kelompok 11**.
 
-Selain itu, aplikasi ini mendukung manajemen barang masuk (inbound), penyortiran kargo berbasis kategori, perilisan manifes jalan armada pengiriman (trip), pelaporan insiden darurat paket di jalan, hingga analitik data operasional serta ekspor data fisik laporan ke format CSV.
+Aplikasi ini dirancang untuk membantu proses operasional gudang logistik mulai dari penerimaan barang (*Inbound*), pengelolaan data barang, penyortiran paket, pelacakan barang menggunakan **Barcode Scanner** berbasis kamera, manajemen perjalanan pengiriman (*Trip Management*), pelaporan insiden, hingga penyajian dashboard analitik operasional.
 
-Aplikasi ini dibangun menggunakan arsitektur penyimpanan lokal kustom yang sangat cepat dan ringan, yaitu memanfaatkan **SharedPreferences yang dikombinasikan dengan pustaka Google GSON** untuk proses serialisasi/deserialisasi objek JSON secara aman tanpa memerlukan database server eksternal.
+Fitur utama aplikasi adalah **Barcode Scanner**, yang memungkinkan petugas melakukan pemindaian barcode menggunakan kamera smartphone untuk mencari data resi secara otomatis dan memperbarui status paket tanpa perlu melakukan input manual.
+
+Untuk penyimpanan data, aplikasi menggunakan **SharedPreferences** yang dipadukan dengan **Google GSON** sehingga seluruh data dapat disimpan dalam format JSON secara lokal tanpa memerlukan database server eksternal.
 
 ---
 
 ## 02. Daftar Anggota
-Proyek aplikasi ini dirancang, dikoding, dan diselesaikan sepenuhnya oleh pengembang tunggal (*Single Developer*):
 
-* **Nama Lengkap:** Revan Dwiki Juniarta
-* **NPM:** 24552011206
-* **Kelompok:** 11 (Sebelas)
-* **Peran:** Full-Stack Android Developer (UI/UX Designer, System Architect, & Core Programmer)
+**Kelompok 11**
+
+| Nama Lengkap | NPM | Peran |
+|--------------|------------|----------------------------------------------|
+| **Revan Dwiki Juniarta** | **24552011206** | Full-Stack Android Developer (UI/UX Design, System Architecture, & Core Programmer) |
 
 ---
 
 ## 03. Link Video Penjelasan
-Berikut adalah tautan langsung untuk melihat demonstrasi aplikasi serta bedah arsitektur source code secara mendalam:
 
-* 📺 **Link Video YouTube:** https://youtu.be/sQxy0GGo3p4
+Video demonstrasi aplikasi beserta penjelasan fitur dan source code dapat diakses melalui tautan berikut.
+
+**Link YouTube**
+
+```
+https://youtu.be/ISI_LINK_VIDEO_ANDA
+```
 
 ---
 
 ## 04. Screenshot Aplikasi
-Berikut adalah dokumentasi antarmuka (*user interface*) dari aplikasi Warehouse LegaPaket:
 
-| Halaman Dashboard Analitik | Fitur Barcode Scanner Kamera |
-| :---: | :---: |
-| ![Dashboard](docs/dashboard_warehouse_legapaket.jpeg) | ![Scanner](docs/scanresi_warehouse_legapaket.jpeg) |
+### Dashboard Analitik
 
-| Daftar Manajemen Barang | Riwayat Aktivitas & Laporan |
-| :---: | :---: |
-| ![Daftar Barang](docs/barang_warehouse_legapaket.jpeg) | ![Laporan](docs/laporan_warehouse_legapaket.jpeg) |
+![Dashboard](docs/dashboard_warehouse_legapaket.jpeg)
+
+---
+
+### Barcode Scanner
+
+![Barcode Scanner](docs/scanresi_warehouse_legapaket.jpeg)
+
+---
+
+### Manajemen Barang
+
+![Manajemen Barang](docs/barang_warehouse_legapaket.jpeg)
+
+---
+
+### Riwayat Aktivitas & Laporan
+
+![Laporan](docs/laporan_warehouse_legapaket.jpeg)
 
 ---
 
 ## 05. Cara Menjalankan Project
 
-Terdapat dua cara untuk menjalankan proyek ini: **Cara Cepat (Instalasi APK Rilis)** untuk langsung menguji aplikasi di perangkat Android, atau **Cara Developer (Cloning Source Code)** jika ingin membedah kode di Android Studio.
+Project dapat dijalankan menggunakan dua cara, yaitu melalui file APK atau melalui Android Studio.
 
-### Opsi A: Cara Cepat (Instalasi File APK)
-Jika Anda hanya ingin langsung mencoba aplikasi di perangkat Android tanpa membuka *source code*:
-1. Buka repositori ini, lalu masuk ke direktori folder `apk/`.
-2. Unduh berkas file rilis yang ada di dalam folder tersebut (misal: `app-release.apk` atau nama berkas APK serupa).
-3. Pindahkan file tersebut ke memori penyimpanan *smartphone* Android Anda.
-4. Buka berkas `.apk` tersebut di HP, izinkan instalasi dari "Sumber Tidak Dikenal" (*Unknown Sources*) jika diminta oleh sistem operasi, lalu selesaikan proses instalasi.
+### Opsi A — Menjalankan Menggunakan File APK
+
+1. Buka folder **apk** pada repository.
+2. Install file **app-release.apk** pada perangkat Android.
+3. Jika diminta, aktifkan izin instalasi dari **Sumber Tidak Dikenal (Unknown Sources)**.
+4. Tunggu hingga proses instalasi selesai.
+5. Jalankan aplikasi Warehouse LegaPaket.
 
 ---
 
-### Opsi B: Cara Developer (Cloning & Push Terminal)
-Jika Anda ingin membuka, memodifikasi, atau menjalankan kode program melalui Android Studio:
+### Opsi B — Menjalankan Menggunakan Android Studio
 
-#### 1. Kloning Repositori & Sinkronisasi Folder
-Buka terminal (Command Prompt / Git Bash) di komputer Anda, lalu jalankan perintah berikut untuk mengunduh folder proyek:
+#### 1. Clone Repository
+
 ```bash
-git clone [https://github.com/revandwikij/warehouse-legapaket.git](https://github.com/revandwikij/warehouse-legapaket.git)
+git clone https://github.com/revandwikij/Warehouse_Lega-Paket.git
+```
+
+#### 2. Masuk ke Folder Project
+
+```bash
+cd Warehouse_Lega-Paket/warehouse
+```
+
+#### 3. Buka Project
+
+Buka **Android Studio**, kemudian pilih menu **Open** dan arahkan ke folder:
+
+```
+Warehouse_Lega-Paket/warehouse
+```
+
+#### 4. Sinkronisasi Gradle
+
+Tunggu hingga proses **Gradle Sync** selesai tanpa error.
+
+#### 5. Jalankan Aplikasi
+
+Hubungkan perangkat Android menggunakan:
+
+- USB Debugging, atau
+- Wireless Debugging
+
+Kemudian tekan tombol **Run ▶** atau gunakan shortcut:
+
+```
+Shift + F10
+```
+
+Tunggu hingga proses build selesai dan aplikasi akan otomatis terpasang pada perangkat Android.
+
+---
+
+### Struktur Repository
+
+```
+Warehouse_Lega-Paket
+│
+├── apk
+│   └── app-release.apk
+│
+├── docs
+│   ├── dashboard_warehouse_legapaket.jpeg
+│   ├── scanresi_warehouse_legapaket.jpeg
+│   ├── barang_warehouse_legapaket.jpeg
+│   ├── laporan_warehouse_legapaket.jpeg
+│   └── diagram/
+│
+├── warehouse
+│   ├── app/
+│   ├── gradle/
+│   ├── build.gradle.kts
+│   ├── settings.gradle.kts
+│   ├── gradlew
+│   ├── gradlew.bat
+│   └── gradle.properties
+│
+├── .gitignore
+└── README.md
+```
+
+---
+
+### Catatan
+
+- Minimum Android yang didukung adalah **Android 12 (API Level 31)**.
+- Project dikembangkan menggunakan **Android Studio** dengan bahasa pemrograman **Kotlin**.
+- Barcode Scanner memanfaatkan kamera smartphone untuk melakukan pemindaian barcode secara langsung.
+- Seluruh data aplikasi disimpan secara lokal menggunakan **SharedPreferences** dan **Google GSON**.# 📦 Warehouse LegaPaket - Android Warehouse Management System
+
+## 01. Nama & Deskripsi Project
+
+**Warehouse LegaPaket** merupakan aplikasi **Warehouse Management System (WMS)** berbasis Android yang dikembangkan menggunakan bahasa pemrograman **Kotlin** sebagai proyek Ujian Akhir Semester (UAS) oleh **Kelompok 11**.
+
+Aplikasi ini dirancang untuk membantu proses operasional gudang logistik mulai dari penerimaan barang (*Inbound*), pengelolaan data barang, penyortiran paket, pelacakan barang menggunakan **Barcode Scanner** berbasis kamera, manajemen perjalanan pengiriman (*Trip Management*), pelaporan insiden, hingga penyajian dashboard analitik operasional.
+
+Fitur utama aplikasi adalah **Barcode Scanner**, yang memungkinkan petugas melakukan pemindaian barcode menggunakan kamera smartphone untuk mencari data resi secara otomatis dan memperbarui status paket tanpa perlu melakukan input manual.
+
+Untuk penyimpanan data, aplikasi menggunakan **SharedPreferences** yang dipadukan dengan **Google GSON** sehingga seluruh data dapat disimpan dalam format JSON secara lokal tanpa memerlukan database server eksternal.
+
+---
+
+## 02. Daftar Anggota
+
+**Kelompok 11**
+
+| Nama Lengkap | NPM | Peran |
+|--------------|------------|----------------------------------------------|
+| **Revan Dwiki Juniarta** | **24552011206** | Full-Stack Android Developer (UI/UX Design, System Architecture, & Core Programmer) |
+
+---
+
+## 03. Link Video Penjelasan
+
+Video demonstrasi aplikasi beserta penjelasan fitur dan source code dapat diakses melalui tautan berikut.
+
+**Link YouTube**
+
+```
+https://youtu.be/ISI_LINK_VIDEO_ANDA
+```
+
+---
+
+## 04. Screenshot Aplikasi
+
+### Dashboard Analitik
+
+![Dashboard](docs/dashboard_warehouse_legapaket.jpeg)
+
+---
+
+### Barcode Scanner
+
+![Barcode Scanner](docs/scanresi_warehouse_legapaket.jpeg)
+
+---
+
+### Manajemen Barang
+
+![Manajemen Barang](docs/barang_warehouse_legapaket.jpeg)
+
+---
+
+### Riwayat Aktivitas & Laporan
+
+![Laporan](docs/laporan_warehouse_legapaket.jpeg)
+
+---
+
+## 05. Cara Menjalankan Project
+
+Project dapat dijalankan menggunakan dua cara, yaitu melalui file APK atau melalui Android Studio.
+
+### Opsi A — Menjalankan Menggunakan File APK
+
+1. Buka folder **apk** pada repository.
+2. Install file **app-release.apk** pada perangkat Android.
+3. Jika diminta, aktifkan izin instalasi dari **Sumber Tidak Dikenal (Unknown Sources)**.
+4. Tunggu hingga proses instalasi selesai.
+5. Jalankan aplikasi Warehouse LegaPaket.
+
+---
+
+### Opsi B — Menjalankan Menggunakan Android Studio
+
+#### 1. Clone Repository
+
+```bash
+git clone https://github.com/revandwikij/Warehouse_Lega-Paket.git
+```
+
+#### 2. Masuk ke Folder Project
+
+```bash
+cd Warehouse_Lega-Paket/warehouse
+```
+
+#### 3. Buka Project
+
+Buka **Android Studio**, kemudian pilih menu **Open** dan arahkan ke folder:
+
+```
+Warehouse_Lega-Paket/warehouse
+```
+
+#### 4. Sinkronisasi Gradle
+
+Tunggu hingga proses **Gradle Sync** selesai tanpa error.
+
+#### 5. Jalankan Aplikasi
+
+Hubungkan perangkat Android menggunakan:
+
+- USB Debugging, atau
+- Wireless Debugging
+
+Kemudian tekan tombol **Run ▶** atau gunakan shortcut:
+
+```
+Shift + F10
+```
+
+Tunggu hingga proses build selesai dan aplikasi akan otomatis terpasang pada perangkat Android.
+
+---
+
+### Struktur Repository
+
+```
+Warehouse_Lega-Paket
+│
+├── apk
+│   └── app-release.apk
+│
+├── docs
+│   ├── dashboard_warehouse_legapaket.jpeg
+│   ├── scanresi_warehouse_legapaket.jpeg
+│   ├── barang_warehouse_legapaket.jpeg
+│   ├── laporan_warehouse_legapaket.jpeg
+│   └── diagram/
+│
+├── warehouse
+│   ├── app/
+│   ├── gradle/
+│   ├── build.gradle.kts
+│   ├── settings.gradle.kts
+│   ├── gradlew
+│   ├── gradlew.bat
+│   └── gradle.properties
+│
+├── .gitignore
+└── README.md
+```
+
+---
+
+### Catatan
+
+- Minimum Android yang didukung adalah **Android 12 (API Level 31)**.
+- Project dikembangkan menggunakan **Android Studio** dengan bahasa pemrograman **Kotlin**.
+- Barcode Scanner memanfaatkan kamera smartphone untuk melakukan pemindaian barcode secara langsung.
+- Seluruh data aplikasi disimpan secara lokal menggunakan **SharedPreferences** dan **Google GSON**.
