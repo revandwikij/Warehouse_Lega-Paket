@@ -1,9 +1,11 @@
 # 📦 Warehouse LegaPaket - Android Logistics Management System
 
 ## 01. Nama & Deskripsi Project
-**Warehouse LegaPaket** adalah aplikasi manajemen operasional logistik gudang (*Warehouse Management System*) berbasis Android yang dikembangkan secara mandiri menggunakan bahasa pemrograman **Kotlin**. 
+**Warehouse LegaPaket** adalah aplikasi manajemen operasional logistik gudang (*Warehouse Management System*) berbasis Android yang dikembangkan oleh **Kelompok 11** menggunakan bahasa pemrograman **Kotlin**. 
 
-Aplikasi ini dirancang untuk mendigitalkan dan mengotomatisasi siklus rantai pasok kargo secara *end-to-end*. Fitur utamanya meliputi manajemen barang masuk (inbound), penyortiran kargo berbasis kategori, perilisan manifes jalan armada pengiriman (trip), pelaporan insiden darurat paket di jalan, hingga analitik data operasional serta ekspor data fisik laporan secara *real-time*.
+Aplikasi ini dirancang untuk mendigitalkan dan mengotomatisasi siklus rantai pasok kargo secara *end-to-end*. **Fitur utama unggulan dari aplikasi ini adalah sistem integrasi Barcode Scanner menggunakan Kamera HP secara real-time**. Petugas cukup mengarahkan kamera ke barcode paket untuk melakukan tracking, memicu pencarian data resi otomatis di database, dan memperbarui status kargo secara instan tanpa input manual. 
+
+Selain itu, aplikasi ini mendukung manajemen barang masuk (inbound), penyortiran kargo berbasis kategori, perilisan manifes jalan armada pengiriman (trip), pelaporan insiden darurat paket di jalan, hingga analitik data operasional serta ekspor data fisik laporan ke format CSV.
 
 Aplikasi ini dibangun menggunakan arsitektur penyimpanan lokal kustom yang sangat cepat dan ringan, yaitu memanfaatkan **SharedPreferences yang dikombinasikan dengan pustaka Google GSON** untuk proses serialisasi/deserialisasi objek JSON secara aman tanpa memerlukan database server eksternal.
 
@@ -14,6 +16,7 @@ Proyek aplikasi ini dirancang, dikoding, dan diselesaikan sepenuhnya oleh pengem
 
 * **Nama Lengkap:** Revan Dwiki Juniarta
 * **NPM:** 24552011206
+* **Kelompok:** 11 (Sebelas)
 * **Peran:** Full-Stack Android Developer (UI/UX Designer, System Architect, & Core Programmer)
 
 ---
