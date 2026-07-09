@@ -36,27 +36,9 @@ https://youtu.be/sQxy0GGo3p4
 
 ## 04. Screenshot Aplikasi
 
-### Dashboard Analitik
-
-![Dashboard](docs/dashboard_warehouse_legapaket.jpeg)
-
----
-
-### Barcode Scanner
-
-![Barcode Scanner](docs/scanresi_warehouse_legapaket.jpeg)
-
----
-
-### Manajemen Barang
-
-![Manajemen Barang](docs/barang_warehouse_legapaket.jpeg)
-
----
-
-### Riwayat Aktivitas & Laporan
-
-![Laporan](docs/laporan_warehouse_legapaket.jpeg)
+| Dashboard | Scanner | Barang | Laporan |
+|:---------:|:-------:|:-------:|:-------:|
+| <img src="docs/dashboard_warehouse_legapaket.jpeg" width="220"> | <img src="docs/scanresi_warehouse_legapaket.jpeg" width="220"> | <img src="docs/barang_warehouse_legapaket.jpeg" width="220"> | <img src="docs/laporan_warehouse_legapaket.jpeg" width="220"> |
 
 ---
 
