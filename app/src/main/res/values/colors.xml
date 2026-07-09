@@ -1,0 +1,26 @@
+<resources>
+
+    <color name="primary">#DC127A</color>
+    <color name="primary_dark">#B70F67</color>
+
+    <color name="primary_light">#FCE3EF</color>
+
+    <color name="text_primary">#4A454E</color>
+    <color name="text_secondary">#7E5260</color>
+
+    <color name="background">#FDF8F9</color>
+
+    <color name="surface">#FFFFFF</color>
+
+    <color name="white">#FFFFFF</color>
+
+    <color name="card_border">#F1D5DF</color>
+
+    <color name="bg_chip">#F3EEF3</color>
+
+    <color name="status_ready">#DC127A</color>
+
+    <color name="status_transit">#4285F4</color>
+
+    <color name="status_delayed">#D93025</color>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@drawable/bg_quick_menu"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <CheckBox
+        android:id="@+id/cbBarang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📦 LP-XXXXX  •  Destination Hub"
+        android:textColor="@color/text_primary"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</LinearLayout>
